@@ -7,8 +7,9 @@ const Header = () => {
   const [showOptions, setShowOptions] = useState(false)
 
   return (
-    <header className="bg-blue-700 text-white capitalize flex items-center px-5 py-3 justify-between rounded-t-md">
-      <span>kobby&apos;s chatroom</span>
+    <header className="bg-blue-500 shadow text-white capitalize flex items-center px-5 py-3 justify-between">
+      <img src="./images/chat.png" alt="" className="h-10" />
+      <h1 className="font-semibold ">kobby&apos;s chatroom</h1>
       <SlOptionsVertical
         onClick={() => {
           setShowOptions(!showOptions)
@@ -17,7 +18,7 @@ const Header = () => {
       />
       {showOptions && (
         <div
-          className="absolute right-3 top-10 border rounded px-5 py-2 cursor-pointer bg-blue-500"
+          className="absolute right-3 top-10 shadow rounded px-5 py-2 cursor-pointer bg-blue-500"
           onClick={() => {
             signOut(auth)
           }}

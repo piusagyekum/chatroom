@@ -35,6 +35,7 @@ const SendMessage = () => {
         <input
           id="message"
           type="text"
+          placeholder="Type a message"
           className="flex-1 bg-gray-200 rounded-full h-10 outline-0 px-4"
           value={message}
           onChange={(e) => {
@@ -42,7 +43,7 @@ const SendMessage = () => {
           }}
           autoFocus
         />
-        <IoMdSend size={30} className="text-blue-600" onClick={handleSend} type="submit" />
+        <IoMdSend size={30} className="text-blue-600 cursor" onClick={handleSend} type="submit" />
       </div>
     </form>
   )

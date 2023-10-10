@@ -34,7 +34,7 @@ const Messages = () => {
     time: "mr-auto",
   }
   return (
-    <div ref={messagesRef} id="messagesRef" className="messages flex-1 overflow-y-scroll overflow-x-hidden">
+    <div ref={messagesRef} id="messagesRef" className="messages flex-1 overflow-y-scroll overflow-x-hidden p-3">
       {messages &&
         messages.map((message) => (
           <div key={message.id} className={`flex items-start first:mt-4`}>
